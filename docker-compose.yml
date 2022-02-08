@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  postgres:
+    image: 'postgres'
+    environment:
+      - POSTGRES_USER=bobby
+      - POSTGRES_PASSWORD=tables
+      - POSTGRES_DB=myapp
+    ports:
+      - "5432:5432"
+
